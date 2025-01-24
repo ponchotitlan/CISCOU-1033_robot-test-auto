@@ -18,7 +18,7 @@ ${DEVICE_IP}   192.168.1.1
 
 *** Test Cases ***
 Create a Network Device
-    [Documentation]    Test the creation of a network device from the API server- http://localhost:8000/devices - body: {"id","name","ip_address"}
+    [Documentation]    Test the creation of a network device in the API server- http://localhost:8000/devices - body: {"id","name","ip_address"}
 
     # Create a session for HTTP requests
     Create Session    http    ${BASE_URL}

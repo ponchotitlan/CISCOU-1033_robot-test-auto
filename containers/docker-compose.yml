@@ -7,3 +7,19 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
+
+  postgres:
+    build:
+      context: ./database-example
+      dockerfile: Dockerfile
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: cisco123
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
