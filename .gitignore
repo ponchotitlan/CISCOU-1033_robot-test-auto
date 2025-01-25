@@ -27,3 +27,4 @@ Icon
 # Robot test cases output files
 robot-tests/*.html
 robot-tests/*.xml
+robot-tests/*.txt
